@@ -1,10 +1,40 @@
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+  }
+
 #quote-box{
-    display: flex;
+    background-color: antiquewhite;
+    width: 400px;
     text-align: center;
-    align-items: center ;
-    height:100vh ;
-}
-#qt{
-    display: block;
+   position: relative;
     
+}
+#text,#author{
+    color: blueviolet;
+}
+
+#new-quote{
+ background-color: rgb(230, 1, 1);
+ border-radius: 4px solid gray;
+ font-style: italic;
+ width: 100px;
+ height: 25px;
+ position: absolute;
+ right: 0;
+ 
+}
+#new-quote:hover{
+    background-color: rgb(219, 151, 151);
+    cursor: pointer;
+}
+#tweet-quote,#fb-quote{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: 0;
+}
+#tweet-quote:hover,#fb-quote{
+  cursor: pointer;
 }
